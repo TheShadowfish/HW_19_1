@@ -4,6 +4,7 @@ from urllib.parse import urlparse, parse_qs
 hostName = "localhost"
 serverPort = 8080
 
+
 class MyServer(BaseHTTPRequestHandler):
 
     def __get_index(self):
