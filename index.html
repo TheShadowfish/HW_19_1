@@ -41,7 +41,7 @@
             height: -webkit-fill-available;
             max-height: 100vh;
             overflow-x: auto;
-            overflow-y: hidden;
+            overflow-y: auto;
         }
 
         .b-example-divider {
@@ -308,92 +308,106 @@
 
                 </div>
             </div>
-            <div class="card">
-                <div class="card-body text-center">
-                    <p class="h2 mt-2 mb-2 text-center">FAQ</p>
-                    <p class="d-inline-flex gap-1 mt-2 mb-2 ">
-                        <a class="btn btn-lg btn-primary" data-bs-toggle="collapse" href="#answer1" role="button"
-                           aria-expanded="false" aria-controls="collapseExample">
-                            Как купить?
-                        </a>
-                        <a class="btn btn-lg btn-primary" data-bs-toggle="collapse" href="#answer2" role="button"
-                           aria-expanded="false" aria-controls="collapseExample">
-                            Как доставить?
-                        </a>
-                        <a class="btn btn-lg btn-primary" data-bs-toggle="collapse" href="#answer3" role="button"
-                           aria-expanded="false" aria-controls="collapseExample">
-                            Какие гарантии?
-                        </a>
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body mb-4 rounded-3 shadow-sm text-center">
+                            <p class="h2 mt-2 mb-2 text-center">FAQ</p>
+                            <p class="d-inline-flex gap-1 mt-2 mb-2 ">
+                                <a class="btn btn-lg btn-primary" data-bs-toggle="collapse" href="#answer1"
+                                   role="button"
+                                   aria-expanded="false" aria-controls="collapseExample">
+                                    Как купить?
+                                </a>
+                                <a class="btn btn-lg btn-primary" data-bs-toggle="collapse" href="#answer2"
+                                   role="button"
+                                   aria-expanded="false" aria-controls="collapseExample">
+                                    Как доставить?
+                                </a>
+                                <a class="btn btn-lg btn-primary" data-bs-toggle="collapse" href="#answer3"
+                                   role="button"
+                                   aria-expanded="false" aria-controls="collapseExample">
+                                    Какие гарантии?
+                                </a>
 
-                    </p>
-                    <div class="collapse  mt-2 mb-2 " id="answer1">
-                        <div class="card card-body">
-                            Чтобы купить товар его нужно добавить в корзину и оплатить удобным для вас образом.
-                        </div>
-                    </div>
-                    <div class="collapse  mt-2 mb-2 " id="answer2">
-                        <div class="card card-body">
-                            Доставка товара осуществляется транспортными компаниями после его приобретения.
-                            Транспортную компанию можно выбрать перед оплатой товара.
-                        </div>
-                    </div>
-                    <div class="collapse  mt-2 mb-2 " id="answer3">
-                        <div class="card card-body">
-                            Если товар не будет доставлен в указанный при покупке срок покупатель может получить деньги назад подав претензию.
+                            </p>
+                            <div class="collapse  mt-2 mb-2 " id="answer1">
+                                <div class="card card-body">
+                                    Чтобы купить товар его нужно добавить в корзину и оплатить удобным для вас образом.
+                                </div>
+                            </div>
+                            <div class="collapse  mt-2 mb-2 " id="answer2">
+                                <div class="card card-body">
+                                    Доставка товара осуществляется транспортными компаниями после его приобретения.
+                                    Транспортную компанию можно выбрать перед оплатой товара.
+                                </div>
+                            </div>
+                            <div class="collapse  mt-2 mb-2 " id="answer3">
+                                <div class="card card-body">
+                                    Если товар не будет доставлен в указанный при покупке срок покупатель может получить
+                                    деньги
+                                    назад подав претензию.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <table class="table">
-  <thead>
-    <!-- номер, название товара, цена за штуку, количество, итоговая сумма, статус заказа.  -->
-    <!-- новый — синий, обработка — желтый, обработан — зеленый, отмена — красный.  -->
+            <div class="row">
+                <div class="col-12">
 
-    <tr>
-      <th scope="col">номер</th>
-      <th scope="col">название товара</th>
-      <th scope="col">цена за штуку</th>
-      <th scope="col">количество</th>
-      <th scope="col">итоговая сумма</th>
-      <th scope="col">статус заказа</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Машинка губозакаточная типа "карандаш"</td>
-      <td>49</td>
-      <td>5</td>
-      <td>245</td>
-      <td class="table-info">новый</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Набор для дрессировки лягушки (жабы)</td>
-      <td>117</td>
-      <td>2</td>
-      <td>234</td>
-      <td class="table-danger">отмена</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Таблетки от жалности "extra-pack" (побольше!)</td>
-      <td>999</td>
-      <td>3</td>
-      <td>2997</td>
-      <td class="table-warning">обработка</td>
-    </tr>
-      <tr>
-      <th scope="row">3</th>
-      <td>Сертификат на весёлую жизнь (ограниченная гарантия)</td>
-      <td>100500</td>
-      <td>1</td>
-      <td>100500</td>
-      <td class="table-success">обработан</td>
-    </tr>
-  </tbody>
-</table>
+                    <table class="table">
+                        <thead>
+                        <!-- номер, название товара, цена за штуку, количество, итоговая сумма, статус заказа.  -->
+                        <!-- новый — синий, обработка — желтый, обработан — зеленый, отмена — красный.  -->
+
+                        <tr>
+                            <th scope="col">номер</th>
+                            <th scope="col">название товара</th>
+                            <th scope="col">цена за штуку</th>
+                            <th scope="col">количество</th>
+                            <th scope="col">итоговая сумма</th>
+                            <th scope="col">статус заказа</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Машинка губозакаточная типа "карандаш"</td>
+                            <td>49</td>
+                            <td>5</td>
+                            <td>245</td>
+                            <td class="table-info">новый</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Набор для дрессировки лягушки (жабы)</td>
+                            <td>117</td>
+                            <td>2</td>
+                            <td>234</td>
+                            <td class="table-danger">отмена</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Таблетки от жалности "extra-pack" (побольше!)</td>
+                            <td>999</td>
+                            <td>3</td>
+                            <td>2997</td>
+                            <td class="table-warning">обработка</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Сертификат на весёлую жизнь (ограниченная гарантия)</td>
+                            <td>100500</td>
+                            <td>1</td>
+                            <td>100500</td>
+                            <td class="table-success">обработан</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
         </main>
 
